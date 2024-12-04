@@ -22,15 +22,15 @@ Node* createNode(int data) {
 // Função para adicionar um nó ao final da lista
 void append(Node** head, int data) {
     Node* newNode = createNode(data);
-    if (*head == NULL) {    // Caso a lista esteja vazia
+    if (*head == NULL) {    
         *head = newNode;
         return;
     }
     Node* temp = *head;
-    while (temp->next != NULL) { // Percorre até o final da lista
+    while (temp->next != NULL) { 
         temp = temp->next;
     }
-    temp->next = newNode;   // Adiciona o novo nó ao final
+    temp->next = newNode;   
 }
 
 // Função para imprimir a lista
